@@ -74,14 +74,16 @@ ul.navlist li a:hover {
 	background-image: url("webImage600.png");
 	background-repeat: no-repeat;
 	bottom: 50px;
-	float: left;
 	height: 598px;
 	position: absolute;
 	width: 264px;
 }
 
 .text {
-	float: left;
+	height: 100%;
+	left: 270px;
+	position: relative;
+	width: 690px;
 }
 
 .container:after {
