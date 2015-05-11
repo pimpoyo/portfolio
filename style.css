@@ -80,7 +80,6 @@ ul.navlist li a:hover {
 }
 
 .text {
-	height: 100%;
 	left: 270px;
 	position: relative;
 	width: 690px;
@@ -109,11 +108,11 @@ footer {
 }
 
 .contact_form ul {
-	width: 690px;
 	list-style-type: none;
 	list-style-position: outside;
 	margin: 0px;
-	padding: 0px;
+	padding: 40px 0px;
+	width: 100%;
 }
 
 .contact_form li {
@@ -170,6 +169,7 @@ footer {
 	-o-transition: padding .25s;
 	padding-right:30px;
 	transition: padding .25s;
+	width: 50%;
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
@@ -190,6 +190,9 @@ footer {
 }
 
 /* submit button */
+div.submit {
+	text-align: right;
+}
 input.submit {
 	background-color: #68b12f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
@@ -216,6 +219,7 @@ input.submit {
 	padding: 6px 20px;
 	text-align: center;
 	text-shadow: 0 -1px 0 #396715;
+	width: 20%
 }
 
 input.submit:hover {
