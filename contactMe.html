@@ -9,48 +9,51 @@
 	<title>pimpoyo</title>
 </head>
 <body>
-	<header>
-		<div class="logo"><a href="index.html">pimpoyo</a></div>
-		<div class="nav">
-			<ul class="navlist">
-				<li><a href="aboutMe.html">about me</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li><a href="projects.html">projects</a></li>
-				<li><a href="hobbies.html">hobbies</a></li>
-				<li class="current">contact me</li>
-			</ul>
-		</div>
-	</header>
-	<div class="container">
-		<aside class="image"></aside>
-		<section class="text">
-			<form action="#" method="POST" name="contact_form" class="contact_form">
+	<div class="wrapper">
+		<header>
+			<div class="header-content">
+			<nav class="main">
 				<ul>
-					<li>
-						<h2>Contacta conmigo</h2>
-						<span class="required_notification">*Campos requeridos</span>
-					</li>
-					<li>
-						<label for="name">Nombre*:</label>
-						<input type="text" name="name" placeholder="Escribe tu nombre" required />
-					</li>
-					<li>
-						<label for="email">E-mail*:</label>
-						<input type="email" name="email" placeholder="Escribe tu email" required />
-					</li>
-					<li>
-						<label for="comments">Motivo*:</label>
-						<textarea name="comments" cols="40" rows="6" maxlength="1000" required></textarea>
-					</li>
-					<li>
-						<div class="submit"><input type="submit" class="submit" value="Enviar"><div>
-					</li>
+					<li class="logo"><a href="index.html">pimpoyo</a></li>
+					<li><a href="aboutMe.html">about me</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+					<li><a href="projects.html">projects</a></li>
+					<li><a href="hobbies.html">hobbies</a></li>
+					<li class="current">contact me</li>
 				</ul>
-			</form>
-		</section>
-	</div>
-	<footer>
-		(contenidos propios del pie: copyright, sitemap, social media, etc.)	
-	</footer>
+			</nav>
+		</header>
+		<div class="container">
+			<aside class="image"></aside>
+			<section class="text">
+				<form action="#" method="POST" name="contact_form" class="contact_form">
+					<ul>
+						<li>
+							<h2>Contacta conmigo</h2>
+							<span class="required_notification">*Campos requeridos</span>
+						</li>
+						<li>
+							<label for="name">Nombre*:</label>
+							<input type="text" name="name" placeholder="Escribe tu nombre" required />
+						</li>
+						<li>
+							<label for="email">E-mail*:</label>
+							<input type="email" name="email" placeholder="Escribe tu email" required />
+						</li>
+						<li>
+							<label for="comments">Motivo*:</label>
+							<textarea name="comments" cols="40" rows="6" maxlength="1000" required></textarea>
+						</li>
+						<li>
+							<div class="submit"><input type="submit" class="submit" value="Enviar"><div>
+						</li>
+					</ul>
+				</form>
+			</section>
+		</div>
+		<footer>
+			(contenidos propios del pie: copyright, sitemap, social media, etc.)	
+		</footer>
+	</div> <!-- wrapper -->
 </body>
 </html>
