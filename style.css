@@ -235,3 +235,22 @@ button.submit:active {
 	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
 	-o-box-shadow: 0 0 10px 5px #356b0b inset;
 }
+
+
+/* mediaqueries rules. I have choosen 4 different size */
+
+@media screen and (max-width: 319px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023) {
+
+}
+
+@media screen and (min-width: 1024) {
+
+}
