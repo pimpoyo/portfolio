@@ -64,19 +64,6 @@ body header .header-content nav ul li.current {
 	padding: 15px 18px;
 }
 
-ul.navlist {
-	font-size: 24px;
-	list-style: none;
-	margin: 0;
-	padding-top: 1%;
-	vertical-align: middle;
-}
-
-ul.navlist li {
-	display: inline;
-	margin-right: 40px;
-}
-
 .container {
 	background-color: #D5D1C5;
 	height: auto;
