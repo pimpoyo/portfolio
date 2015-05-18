@@ -110,6 +110,17 @@ footer .footer-content .links ul li {
 	display: inline;
 }
 
+footer .footer-content .copyright {
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 20px 0 40px;
+}
+
+footer .copyright {
+	border-color: #787875;
+	color: #84807f;
+}
+
 .container {
 	background-color: #D5D1C5;
 	height: auto;
