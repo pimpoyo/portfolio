@@ -1,9 +1,8 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-	display: block;
-}
-
-.wrapper {
-	background-color: #d5d1c5;
+.wrap {
+	margin: auto;
+	max-width: 75em;
+	overflow: hidden;
+	width: 100%;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
 
 ol, ul {
     list-style: outside none none;
+	padding: 0;
 }
 
 a {
@@ -25,8 +25,11 @@ a {
 	text-decoration: none;
 }
 
-body header .menu-bar {
-	display: none;
+body header {
+	background: #000000;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 }
 
 body header .header-content::after {
@@ -59,8 +62,10 @@ body header .header-content nav ul li {
 	padding: 15px 0;
 }
 
-body header .header-content nav ul li.logo {
+body header .logo {
+	float: left;
 	font-size: 36px;
+	padding: 23px;
 }
 
 body header .header-content nav ul li > a, body header .header-content nav ul li > span {
@@ -74,7 +79,7 @@ body header .header-content nav ul li > a:hover {
 
 body header .header-content nav ul li.current {
 	color: yellow;
-	padding: 15px 18px;
+	padding: 15px 30px;
 }
 
 footer {
@@ -291,6 +296,10 @@ button.submit:active {
 /* mediaqueries rules. I have choosen 4 different size */
 
 @media screen and (max-width: 319px) {
+	body header .logo {
+		margin-right: 0;
+	}
+	
 	.wrapper {
 		width: 100%;
 		margin: 0 auto;
@@ -299,12 +308,44 @@ button.submit:active {
 	.contact_form label {
 		display: none;
 	}
+	
+	body header .header-content nav {
+		width: 80%;
+		height: 100%;
+		left: -100%;
+		margin: 20px 0 0;
+		position: fixed;
+	}
+	
+	body header .header-content nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	body header .menu_bar {
+		display: block;
+		width: 100%;
+		background-color: #cccccc;
+	}
+
+	body header .menu_bar .bt-menu {
+		display: block;
+		padding: 23px;
+		background-color: #000000;
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 36px;
+	}
+	
+	body header .menu_bar span{
+		float: right;
+	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	.wrapper {
-		width: 300px;
-		margin: 0 auto;
+	body header .logo {
+		margin-right: 2.5em;
 	}
 	
 	.contact_form label {
@@ -314,15 +355,73 @@ button.submit:active {
 	body header .header-content nav {
 		width: 80%;
 		height: 100%;
-		margin: 0;
+		left: -100%;
+		margin: 20px 0 0;
 		position: fixed;
+	}
+	
+	body header .header-content nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	body header .menu_bar {
+		display: block;
+		width: 100%;
+		background-color: #cccccc;
+	}
+
+	body header .menu_bar .bt-menu {
+		display: block;
+		padding: 23px;
+		background-color: #000000;
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 36px;
+	}
+	
+	body header .menu_bar span{
+		float: right;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	.wrapper {
-		width: 740px;
-		margin: 0 auto;
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	body header .logo {
+		margin-right: 2.5em;
+	}
+	
+	body header .header-content nav {
+		width: 80%;
+		height: 100%;
+		left: -100%;
+		margin: 20px 0 0;
+		position: fixed;
+	}
+	
+	body header .header-content nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	body header .menu_bar {
+		display: block;
+		width: 100%;
+		background-color: #cccccc;
+	}
+
+	body header .menu_bar .bt-menu {
+		display: block;
+		padding: 23px;
+		background-color: #000000;
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 36px;
+	}
+	
+	body header .menu_bar span{
+		float: right;
 	}
 	
 	.contact_form label {
@@ -330,13 +429,13 @@ button.submit:active {
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.wrapper {
-		width: 960px;
-		margin: 0 auto;
+@media screen and (min-width: 960px) {
+	body header .logo {
+		margin-right: 2.5em;
 	}
-
+	
 	body header .header-content {
+		float: left;
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 960px;
@@ -344,6 +443,10 @@ button.submit:active {
 		padding-right: 0;
 	}
 	
+	body header .menu_bar {
+		display: none;
+	}
+
 	.contact_form label {
 		display: inline-block;
 	}

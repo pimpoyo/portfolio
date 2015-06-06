@@ -3,23 +3,34 @@
 <head>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="icons.css">
 	<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>	
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
 	<meta charset="UTF-8">
 	<!--<link rel="Shortcut Icon" href="favicon.ico">-->
 	<title>pimpoyo</title>
 </head>
 <body>
 	<header>
-		<div class="logo"><a href="index.html">pimpoyo</a></div>
-		<div class="nav">
-			<ul class="navlist">
-				<li><a href="aboutMe.html">about me</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li class="current">projects</li>
-				<li><a href="hobbies.html">hobbies</a></li>
-				<li><a href="contactMe.html">contact me</a></li>
-			</ul>
-		</div>
+		<section class="wrap">
+			<div class="logo">
+				<a href="index.html">pimpoyo</a>
+			</div>
+			<div class="menu_bar">
+				<div class="bt-menu"><span class="icon-menu"></span></div>
+			</div>
+			<div class="header-content">
+				<nav class="main">
+					<ul>
+						<li><a href="aboutMe.html">about me</a></li>
+						<li><a href="portfolio.html">portfolio</a></li>
+						<li class="current">projects</li>
+						<li><a href="hobbies.html">hobbies</a></li>
+						<li><a href="contactMe.html">contact me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 	</header>
 	<div class="container">
 		<aside class="image"></aside>
@@ -30,5 +41,8 @@
 	<footer>
 		(contenidos propios del pie: copyright, sitemap, social media, etc.)	
 	</footer>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
 </body>
 </html>
