@@ -87,6 +87,7 @@ body header .header-content nav ul li.current {
 	padding-top: 4.1em;
 }
 
+
 html {
   background-size: cover;
   height: 100%;
@@ -433,6 +434,12 @@ button.submit:active {
 	-o-box-shadow: 0 0 10px 5px #356b0b inset;
 }
 
+.container {
+	padding: 6em 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
 
 /* mediaqueries rules. I have choosen 4 different size */
 
@@ -446,10 +453,6 @@ button.submit:active {
 		margin: 0 auto;
 	}
 
-	.contact_form label {
-		display: none;
-	}
-	
 	body header .header-content nav {
 		width: 80%;
 		height: 100%;
@@ -498,10 +501,6 @@ button.submit:active {
 		margin-right: 2.5em;
 	}
 	
-	.contact_form label {
-		display: inline-block;
-	}
-
 	body header .header-content nav {
 		width: 80%;
 		height: 100%;
@@ -582,10 +581,6 @@ button.submit:active {
 	body header .menu_bar span{
 		float: right;
 	}
-	
-	.contact_form label {
-		display: inline-block;
-	}
 }
 
 @media screen and (min-width: 960px) {
@@ -605,8 +600,10 @@ button.submit:active {
 	body header .menu_bar {
 		display: none;
 	}
-
-	.contact_form label {
-		display: inline-block;
+	
+	.container {
+    	max-width: 960px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
