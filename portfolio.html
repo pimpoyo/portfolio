@@ -4,6 +4,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/jquery-fullsizable.css">
+	<link rel="stylesheet" href="css/jquery-fullsizable-theme.css">
 	<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>	
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
 	<meta charset="UTF-8">
@@ -11,6 +13,7 @@
 	<title>pimpoyo</title>
 </head>
 <body>
+<div id="wrapper">
 	<header>
 		<section class="wrap">
 			<div class="logo">
@@ -33,10 +36,24 @@
 		</section>
 	</header>
 	<div class="container">
-		<aside class="image"></aside>
-		<section class="text">
-			contenido
-		</section>
+      <a href="img/IMG_4556.jpg" class="fullsizable">
+        <img alt="London Sunset" src="img/IMG_4556-2.jpg">
+      </a>
+      <a href="img/IMG_4851.jpg" class="fullsizable">
+        <img alt="London Eye 1" src="img/IMG_4851-2.jpg">
+      </a>
+      <a href="img/IMG_4713.jpg" class="fullsizable">
+        <img alt="London Eye 2" src="img/IMG_4713-2.jpg">
+      </a>
+      <a href="img/IMG_5887.jpg" class="fullsizable">
+        <img alt="Big Ben" src="img/IMG_5887-2.jpg">
+      </a>
+      <a href="img/IMG_5898.jpg" class="fullsizable">
+        <img alt="Tower Bridge" src="img/IMG_5898-2.jpg">
+      </a>
+      <a href="img/IMG_6194.jpg" class="fullsizable">
+        <img alt="Piccadilly Circus" src="img/IMG_6194-2.jpg">
+      </a>
 	</div>
 	<footer>
 		<div class="footer-content">
@@ -63,8 +80,51 @@
 			</div>
 		</div>
 	</footer>
+
+
+  </div>
+
 	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdn.rawgit.com/MSchmidt/jquery-fullsizable/v2.0.2/js/jquery.fullsizable.2.0.2.min.js"></script>
+  <script>
+    $('a.fullsizable').fullsizable({
+      detach_id: 'wrapper'
+    });
+
+    $(document).on('fullsizable:opened', function(){
+      $("#jquery-fullsizable").swipe({
+        swipeLeft: function(){
+          $(document).trigger('fullsizable:next')
+        },
+        swipeRight: function(){
+          $(document).trigger('fullsizable:prev')
+        },
+        swipeUp: function(){
+          $(document).trigger('fullsizable:close')
+        }
+      });
+    });
+
+var metas = document.getElementsByTagName('meta');
+var i;
+if (navigator.userAgent.match(/iPhone/i)) {
+  for (i=0; i<metas.length; i++) {
+    if (metas[i].name == "viewport") {
+      metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+    }
+  }
+  document.addEventListener("gesturestart", gestureStart, false);
+}
+function gestureStart() {
+  for (i=0; i<metas.length; i++) {
+    if (metas[i].name == "viewport") {
+      metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+    }
+  }
+}
+  </script>
 	<script type="text/javascript" src="./js/functions.js"></script>
 </body>
 </html>
