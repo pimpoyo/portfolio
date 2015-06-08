@@ -134,43 +134,6 @@
 	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
   <script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
   <script src="https://cdn.rawgit.com/MSchmidt/jquery-fullsizable/v2.0.2/js/jquery.fullsizable.2.0.2.min.js"></script>
-  <script>
-    $('a.fullsizable').fullsizable({
-      detach_id: 'wrapper'
-    });
-
-    $(document).on('fullsizable:opened', function(){
-      $("#jquery-fullsizable").swipe({
-        swipeLeft: function(){
-          $(document).trigger('fullsizable:next')
-        },
-        swipeRight: function(){
-          $(document).trigger('fullsizable:prev')
-        },
-        swipeUp: function(){
-          $(document).trigger('fullsizable:close')
-        }
-      });
-    });
-
-var metas = document.getElementsByTagName('meta');
-var i;
-if (navigator.userAgent.match(/iPhone/i)) {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-    }
-  }
-  document.addEventListener("gesturestart", gestureStart, false);
-}
-function gestureStart() {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-    }
-  }
-}
-  </script>
 	<script type="text/javascript" src="./js/functions.js"></script>
 </body>
 </html>
