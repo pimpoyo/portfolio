@@ -1,14 +1,23 @@
 app.controller('MainController', ['$scope',
 function($scope){
 	$scope.images = [{
-		image: 'img/IMG_4556.jpg',
-		className: 'all studio',
+		image: 'img/cartel_min.jpg',
+		className: '[all, photoshop]',
 		text: 'Texto para el alt'
 	},
 	{
-		image: 'img/IMG_4851.jpg',
-		className: 'all landscape',
+		image: 'img/modelo_min.jpg',
+		className: '[all, photoshop]',
 		text: 'Texto para el alt'
+	},
+	{
+		image: 'img/mundial_min.jpg',
+        className: '[all, photoshop]',
+        text: 'Texto para el alt'
+	},
+    {
+		image: 'img/nombre_min.jpg',
+        className: '[all, photoshop]',
+        text: 'Texto para el alt'
 	}];	
-	
 }]);

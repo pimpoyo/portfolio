@@ -1,3 +1,32 @@
+#gallery-content-center img {
+	float: left;
+}
+
+.all_hidden {
+	display: none;
+}
+
+.all {
+	display: block;
+}
+
+.landscape_hidden {
+	display: none;
+}
+
+.landscape {
+	display: block;
+}
+
+.studio_hidden {
+	display: none;
+}
+
+.studio {
+	display: block;
+}
+
+
 .wrap {
 	margin: auto;
 	max-width: 75em;

@@ -36,59 +36,20 @@
 			</div>
 		</section>
 	</header>
-	<div id="gallery">
+	<div id="gallery" ng-controller="MainController">
 		<div id="gallery-header">
 			<div id="gallery-header-center">
-				<div class="gallery-header-center-right-links" id="filter-all">All</div>
-				<div class="gallery-header-center-right-links" id="filter-studio">Studio</div>
-				<div class="gallery-header-center-right-links" id="filter-landscape">Landscapes</div>
+				<div class="gallery-header-center-right-links" id="filter-all" ng-click="all='all'">All</div>
+				<div class="gallery-header-center-right-links" id="filter-studio" ng-click="[all='all_hidden',
+					studio='studio']">Studio</div>
+				<div class="gallery-header-center-right-links" id="filter-landscape" ng-click="[all='all_hidden', landscape='landscape']">Landscapes</div>
 			</div>
 		</div>
 		<div id="gallery-content">
-			<div id="gallery-content-center" ng-controller="MainController">
-				<div ng-repeat="image in images"> 
-						<img ng-src="{{ image.image}}" ng-class="{{ image.className }}">
+			<div id="gallery-content-center">
+				<div ng-repeat="image in images">
+					<img ng-src="{{ image.image }}" ng-class="{{ image.className }}">
 				</div>
-				
-				<!--<a href="img/IMG_4556.jpg" class="fullsizable">
-					<img alt="London Sunset" src="img/IMG_4556.jpg" class="all studio">
-				</a>
-				<a href="img/IMG_4851.jpg" class="fullsizable">
-					<img alt="London Eye 1" src="img/IMG_4851.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_4713.jpg" class="fullsizable">
-					<img alt="London Eye 2" src="img/IMG_4713.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_5887.jpg" class="fullsizable">
-					<img alt="Big Ben" src="img/IMG_5887.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_5898.jpg" class="fullsizable">
-					<img alt="Tower Bridge" src="img/IMG_5898.jpg" class="all studio">
-				</a>
-				<a href="img/IMG_6194.jpg" class="fullsizable">
-					<img alt="Piccadilly Circus" src="img/IMG_6194.jpg" class="all studio">
-				</a>
-				<a href="img/IMG_4556.jpg" class="fullsizable">
-					<img alt="London Sunset" src="img/IMG_4556.jpg" class="all studio">
-				</a>
-				<a href="img/IMG_4851.jpg" class="fullsizable">
-					<img alt="London Eye 1" src="img/IMG_4851.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_4713.jpg" class="fullsizable">
-					<img alt="London Eye 2" src="img/IMG_4713.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_5887.jpg" class="fullsizable">
-					<img alt="Big Ben" src="img/IMG_5887.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_5898.jpg" class="fullsizable">
-					<img alt="Tower Bridge" src="img/IMG_5898.jpg" class="all landscape">
-				</a>
-				<a href="img/IMG_6194.jpg" class="fullsizable">
-					<img alt="Piccadilly Circus" src="img/IMG_6194.jpg" class="all landscape">
-				</a>
-				<a href="img/cesar.jpg" class="fullsizable">
-					<img alt="Piccadilly Circus" src="img/cesar.jpg" class="all landscape">
-				</a>-->
 			</div>
 		</div>
 	</div>
@@ -123,9 +84,7 @@
 
 	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
-  <script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
-<!--  <script src="https://cdn.rawgit.com/MSchmidt/jquery-fullsizable/v2.0.2/js/jquery.fullsizable.2.0.2.min.js"></script>-->
-	<script type="text/javascript" src="./js/fullsizable.min.js"></script>
+  	<script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript" src="_scripts/jquery-ui-1.10.4.min.js"></script>
 	<script type="text/javascript" src="_scripts/jquery.isotope.min.js"></script>
 	<script type="text/javascript" src="_scripts/animated-masonry-gallery.js"></script>
