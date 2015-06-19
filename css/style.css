@@ -10,19 +10,19 @@
 	display: block;
 }
 
-.landscape_hidden {
+.illustrator_hidden {
 	display: none;
 }
 
-.landscape {
+.illustrator {
 	display: block;
 }
 
-.studio_hidden {
+.photoshop_hidden {
 	display: none;
 }
 
-.studio {
+.photoshop {
 	display: block;
 }
 

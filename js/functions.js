@@ -21,25 +21,6 @@ function main() {
 	});
 };
 
-
-    $('a.fullsizable').fullsizable({
-      detach_id: 'wrapper'
-    });
-
-    $(document).on('fullsizable:opened', function(){
-      $("#jquery-fullsizable").swipe({
-        swipeLeft: function(){
-          $(document).trigger('fullsizable:next')
-        },
-        swipeRight: function(){
-          $(document).trigger('fullsizable:prev')
-        },
-        swipeUp: function(){
-          $(document).trigger('fullsizable:close')
-        }
-      });
-    });
-
 var metas = document.getElementsByTagName('meta');
 var i;
 if (navigator.userAgent.match(/iPhone/i)) {
