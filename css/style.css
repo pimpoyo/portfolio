@@ -571,6 +571,19 @@ button.submit:active {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+	
+	#gallery {
+		width: 320px;
+	}
+
+	#gallery-content {
+		padding-bottom: 10px;
+	}
+
+	#gallery-content-center img {
+		margin-left: 10px;
+		margin-top: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
@@ -610,6 +623,19 @@ button.submit:active {
 	body header .menu_bar span{
 		float: right;
 	}
+	
+	#gallery {
+		width: 645px;
+	}
+	
+	#gallery-content {
+		padding-bottom: 15px;
+	}
+
+	#gallery-content-center img {
+		margin-left: 15px;
+		margin-top: 15px;
+	}
 }
 
 @media screen and (min-width: 960px) {
@@ -635,4 +661,16 @@ button.submit:active {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-}
+
+	#gallery {
+		width: 960px;
+	}
+	
+	#gallery-content {
+		padding-bottom: 15px;
+	}
+
+	#gallery-content-center img {
+		margin-left: 15px;
+		margin-top: 15px;
+	}
