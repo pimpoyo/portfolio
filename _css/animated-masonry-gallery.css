@@ -93,16 +93,14 @@ body {
 	width: 100%;
 }
 #gallery-header{
-	height: 100px;
-	width: 100%;
 	float: left;
+	margin-top: 4.1em;
+	width: 100%;
 }
 #gallery-header-center{
-	height: 100px;
-	width: 950px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 4.1em;
 }
 #gallery-header-center-left{
 	float: left;
@@ -143,10 +141,9 @@ body {
 .gallery-header-center-right-links {
 	color: #333333;
 	float: left;
-	height: 35px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-left: 20px;
+	padding: 10px 20px;
+	margin-left: 15px;
+	margin-top: 15px;
 	font-size: 16px;
 	font-weight: 400;
 	-webkit-transition: background 0.5s;
