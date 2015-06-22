@@ -463,6 +463,21 @@ button.submit:active {
 	-o-box-shadow: 0 0 10px 5px #356b0b inset;
 }
 
+.g-recaptcha {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.g-recaptcha div div {
+  margin: 0 auto;  
+}
+
+.rc-anchor-light .rc-anchor-light {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
 .container {
 	padding: 6em 0;
 	margin-left: auto;
