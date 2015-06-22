@@ -49,7 +49,15 @@
 		<div id="gallery-content">
 			<div id="gallery-content-center">
 				<div ng-repeat="image in images">
-					<img ng-src="{{ image.image }}" ng-class="{{ image.className }}">
+					<a href="#{{ image.id }}"><img ng-src="{{ image.image }}" ng-class="{{ image.className }}"></a>
+					<div id="{{ image.id }}" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close"><p>X</p></a>
+							<h2>{{ image.id }}</h2>
+							<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+							<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
