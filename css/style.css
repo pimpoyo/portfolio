@@ -26,7 +26,6 @@
 	display: block;
 }
 
-
 .wrap {
 	margin: auto;
 	max-width: 75em;
@@ -34,6 +33,12 @@
 	width: 100%;
 }
 
+.about p {
+	font-size: 30px;
+	line-height: 120%;
+	text-align: justify;
+	width: 90%;
+}
 body {
 	background: none repeat scroll 0 0 #ffffff;
 }
@@ -42,6 +47,7 @@ body {
 	font-family: 'Advent Pro', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
+	min-width: 320px;
 }
 
 ol, ul {
@@ -480,10 +486,21 @@ button.submit:active {
 }
 
 .container {
-	padding: 6em 0;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 90%;
+	padding: 6em 0;
+}
+
+.autorretrato {
+	text-align: center;
+	margin-bottom: -105px;
+}
+
+.autorretrato img {
+	min-width: 320px;
+	max-width: 400px;
+	width: 100%;
 }
 
 .modalDialog {
@@ -536,7 +553,6 @@ button.submit:active {
 }
 
 .close:hover { background: #00d9ff; }
-
 
 /* mediaqueries rules. I have choosen 4 different size */
 /*
