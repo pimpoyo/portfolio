@@ -2,7 +2,6 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/icons.css">
 	<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>	
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
@@ -44,10 +43,13 @@
 				</p>
 				<p class="text">
 					<textarea name="text" class="feedback-input" id="comment" placeholder="Comment" required maxlength="1000"></textarea>
-				</p>
-				<div class="submit">
-				<input type="submit" value="SEND" id="button-blue"/>
-				<div class="ease"></div>
+        </p>
+        <p>
+          <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        </p>
+        <div class="submit">
+				  <input type="submit" value="SEND" id="button-blue"/>
+				  <div class="ease"></div>
 				</div>
 			</form>
 		</div>
@@ -79,7 +81,9 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 	<script type="text/javascript" src="./js/functions.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </body>
 </html>
